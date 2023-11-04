@@ -1,0 +1,14 @@
+CREATE DATABASE exercise_class_1;
+USE exercise_class_1;
+DROP TABLE user;
+CREATE TABLE user (
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(45) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    created_at DATETIME NOT NULL
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf16;
